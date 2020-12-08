@@ -103,12 +103,20 @@ html{
     color:#f9e0ae;
     font-family: 'Montserrat Alternates', sans-serif;
 }
-.about-description button{
+.about-description a{
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#f9e0ae;;
+    border:none;
+    cursor:pointer;
+    background: #c24914;
+    text-transform: uppercase;
+    text-decoration:none;
     max-width: 50%;
     font-size: 1.1vw;
     padding: 3%;    
 }
-.about-description button:hover{
+.about-description a:hover{
     transition: .5s ease-in-out;
     background: #f9e0ae;
     color: #682c0e;
