@@ -83,6 +83,7 @@ html{
 }
 .about-container img{
     width: 40%;
+    height: auto;
 }
 .about-description{
     margin: 3% 10%;
@@ -214,11 +215,11 @@ html{
 
 @media screen and (max-width: 580px){
     .navbar h1 a {
-        font-size: 5vw;
+        font-size: 4vw;
         top: 5%;
     }
     .nav-links a{
-        font-size: 1.7vh;
+        font-size: 2.4vw;
         margin:0;
     }
     .nav-links{
@@ -234,6 +235,7 @@ html{
     /* About me */
     .about-container{
         width: 80%;
+        height: 50%;
         margin: 5% 10%;
     }
     .about-description h1{
@@ -273,5 +275,10 @@ html{
     }
     .contact-info{
         font-size: 2vh;
+    }
+}
+@media screen and (max-width: 480px){
+    .navbar h1 a {
+        top: 17.5%;
     }
 }
