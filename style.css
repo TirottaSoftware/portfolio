@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#my-work:before, #about-me:before {
+    height: 50px;
+    content: "";
+    display:block;
+}
+button, a{
+    outline:none;
+}
+button{
+    color:#f9e0ae;;
+    border:none;
+    cursor:pointer;
+    background: #c24914;
+    text-transform: uppercase;
+}
+body{
+    background : #f9e0ae;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    width: 100vw;
+    position: fixed;
+    display:flex;
+    transition: .5s ease-in-out;
+    justify-content: start;
+}
+.scrolled{
+    background:#682c0e;
+}
+.navbar h1{
+    width: 20%;
+    margin-left:0;
+}
+.navbar h1 a{ 
+    position: absolute;
+    text-decoration:none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    left:1%;
+    text-transform:uppercase;
+    color:white;
+    font-size: 1.7vw;
+}
+.nav-links{
+    width: 35%;
+    margin: 0 32.5% 0 12.5%;
+    white-space:nowrap;
+}
+.nav-links a{ 
+    font-size: 1.7vw;
+    font-family: 'Raleway', sans-serif;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:white;
+    margin: 1% 3%;
+}
+.nav-links a:hover,
+.navbar h1 a:hover{
+    transition: .5s ease-in-out;
+    color:#fc8621;
+}
+.hero{
+    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.73)),
+    url("./hero.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+/* About me */
+
+.about-container{
+    background: #682c0e;
+    display:flex;
+    width: 60%;
+    margin: 5% 20%;
+}
+.about-container img{
+    width: 40%;
+}
+.about-description{
+    margin: 3% 10%;
+    display:flex;
+    justify-content: space-between;
+    flex-flow:column;
+}
+.about-description h1{
+    color:#f9e0ae;
+    text-transform: uppercase;
+    font-size: 3vw;
+    margin-bottom: 5%;
+    font-family: 'Josefin Sans', sans-serif; 
+}
+.about-description p{
+    font-size: 1.4vw;
+    color:#f9e0ae;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.about-description button{
+    max-width: 50%;
+    font-size: 1.1vw;
+    padding: 3%;    
+}
+.about-description button:hover{
+    transition: .5s ease-in-out;
+    background: #f9e0ae;
+    color: #682c0e;
+}
+/* Projects */
+#projects-title{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3vw;
+    text-transform: uppercase;
+    color:  #682c0e;
+    text-align: center;
+}
+.projects-container{
+    display:flex;
+    flex-wrap:wrap;
+    width: 100%;
+    justify-content: center;
+}
+.project-card{
+    background: #682c0e;
+    width: 30%;
+    display:flex;
+    flex-flow:column;
+    margin: 2.5%;
+}
+.project-card img{
+    width: 100%;
+}
+.project-card .project-info{
+    margin: 3% 10% 5% 10%;
+    display:flex;
+    flex-flow:column;
+    width: 80%;
+    height: 50%;
+    justify-content: space-between;
+}
+.project-info *{
+    color: #f9e0ae;
+    font-size: 1.2vw;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.project-info h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.7vw;
+    white-space:nowrap;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3%;
+}
+.project-links a{
+    color:#f9e0ae;;
+    border:none;
+    cursor:pointer;
+    background: #c24914;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    width:50%;
+    text-decoration: none;
+    margin: 0 1%;
+    text-align:center;
+    padding: 2% 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f9e0ae;
+}
+.project-links a:hover{
+    transition: .5s ease-in-out;
+    background: #f9e0ae;
+    color: #682c0e ;
+}
+.project-info .project-links{
+    margin-top: 5%;
+    display:flex;
+    justify-content:space-between;
+}
+.project-links a:hover >  i{
+    transition: .5s ease-in-out;
+    color: #682c0e !important;
+}
+/* Footer */
+#contacts{
+    background: #682c0e;
+    align-items:center;
+}
+.contact-links{
+    display:flex;
+    justify-content:center;
+}
+.contact-links a{
+    color: #f9e0ae;
+    margin: 1% 2%;
+    font-size: 2.5vw;
+}
+.contact-links a:hover{
+    transition: .5s ease-in-out;
+    color: #fc8621;
+}
+.contact-info{
+    padding-bottom: 1%;
+    font-size: 1.1vw;
+    text-align:center;
+    color: #f9e0ae;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+@media screen and (max-width: 580px){
+    .navbar h1 a {
+        font-size: 5vw;
+        top: 5%;
+    }
+    .nav-links a{
+        font-size: 1.7vh;
+        margin:0;
+    }
+    .nav-links{
+        margin-right: 11vw;
+        width: 30vw;
+    }
+    .navbar{
+        display:flex;
+        padding: 1%;
+        align-items:center;
+        justify-content:flex-end;
+    }
+    /* About me */
+    .about-container{
+        width: 80%;
+        margin: 5% 10%;
+    }
+    .about-description h1{
+        font-size: 3vh;
+    }
+    .about-description p{
+        font-size: 1.7vh;
+    }
+    .about-description button{
+        font-size: 1.4vh;
+    }
+    /* My Work */
+    #projects-title{
+        font-size: 3vh;
+    }
+    .projects-container{
+        flex-flow:column;
+        align-items:center;
+    }
+    .project-card{
+        width: 70%;
+        margin: 2.5%;
+    }
+    .project-card h1{
+        font-size: 2.7vh;
+    }
+    .project-card p{
+        font-size: 2vh;
+    }
+    .project-links button, .project-links button i{
+        font-size: 2vh;
+    }
+    /* Footer */
+    .contact-links a{
+        font-size: 4vh;
+        margin: 3% 2%;
+    }
+    .contact-info{
+        font-size: 2vh;
+    }
+}
